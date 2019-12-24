@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">ScoreKeeper</string>
+
+    <!-- text placeholders -->
+    <string name="sport">sport</string>
+    <string name="time">00:00</string>
+
+    <!-- Player football text -->
+    <string name="number">no</string>
+    <string name="player">Player</string>
+    <string name="yellow_card">yellow card</string>
+    <string name="red_card">red card</string>
+
+    <!-- Player football text -->
+    <string name="fault">fault</string>
+
+    <!-- Tennis text -->
+    <string name="gem">gem</string>
+    <string name="tennis_set">set</string>
+
+    <!-- Timer text -->
+    <string name="minutes">minutes</string>
+    <string name="set">set</string>
+    <string name="start">start</string>
+    <string name="pause">pause</string>
+
+    <string name="field_cant_be_empty">Field can\'t be empty</string>
+    <string name="enter_positive_number">Please enter a positive number</string>
+
+    <string name="badminton">Badminton</string>
+    <string name="basketball">Basketball</string>
+    <string name="cricket">Cricket</string>
+    <string name="football">Football</string>
+    <string name="handball">Handball</string>
+    <string name="hockey">Hockey</string>
+    <string name="rugby">Rugby</string>
+    <string name="tabletennis">Table tennis</string>
+    <string name="tennis">Tennis</string>
+    <string name="volleyball">Volleyball</string>
+
+    <string name="match">match</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="goal">goal</string>
+    <string name="reset">reset</string>
+
+    <string name="current_set">current set</string>
+    <string name="final_score">final score</string>
+
+    <string name="point1">1 point</string>
+    <string name="point2">2 points</string>
+    <string name="point3">3 points</string>
+    <string name="colon">:</string>
+
+    <string name="run1">1 run</string>
+    <string name="run4">4 runs</string>
+    <string name="run6">6 runs</string>
+    
+    <string name="rugby_try">try</string>
+    <string name="rugby_conversion">conversion</string>
+    <string name="rugby_penalty">penalty</string>
+    
+    <!-- descriptions -->
+    <string name="grid_item_background">grid item background image</string>
+    
+
+
+</resources>

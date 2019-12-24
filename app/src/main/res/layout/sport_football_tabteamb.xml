@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alpha_background"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/id"
+            layout="@layout/sport_football_player"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_8" />
+
+        <include
+            android:id="@+id/id"
+            layout="@layout/sport_football_player"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_8" />
+
+        <include
+            android:id="@+id/id"
+            layout="@layout/sport_football_player"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_8" />
+
+        <include
+            android:id="@+id/id"
+            layout="@layout/sport_football_player"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_8" />
+
+        <include
+            android:id="@+id/id"
+            layout="@layout/sport_football_player"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_8" />
+
+        <include
+            android:id="@+id/id"
+            layout="@layout/sport_football_player"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_8" />
+
+        <include
+            android:id="@+id/id"
+            layout="@layout/sport_football_player"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_8" />
+
+        <include
+            android:id="@+id/id"
+            layout="@layout/sport_football_player"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_8" />
+
+        <include
+            android:id="@+id/id"
+            layout="@layout/sport_football_player"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_8" />
+
+        <include
+            android:id="@+id/id"
+            layout="@layout/sport_football_player"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_8" />
+
+        <include
+            android:id="@+id/id"
+            layout="@layout/sport_football_player"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginTop="@dimen/margin_8" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tabletennis_toolbar"
+        style="@style/Toolbar"
+        android:background="@color/tabletennisColorDark"
+        app:title="@string/tabletennis"
+        app:titleTextColor="@color/white" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabletennis_toolbar"
+        android:background="@drawable/tabletennis_field"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/alpha_background">
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/buttonGoalTeamA"
+            style="@style/Point_button"
+            android:background="@drawable/mybuttontabletennis"
+            android:text="@string/goal"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <Button
+            android:id="@+id/buttonGoalTeamB"
+            style="@style/Point_button"
+            android:background="@drawable/mybuttontabletennis"
+            android:text="@string/goal"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/Team_heading"
+            android:text="@string/team_b"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/Team_heading"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="@string/team_a"
+            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/pointsTeamA"
+            style="@style/Point_heading"
+            android:layout_marginEnd="@dimen/margin_8"
+            app:layout_constraintEnd_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/textView10"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/finalPointsTeamA"
+            style="@style/Point_heading"
+            android:layout_marginEnd="@dimen/margin_8"
+            app:layout_constraintEnd_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/textView6"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/pointsTeamB"
+            style="@style/Point_heading"
+            android:layout_marginStart="@dimen/margin_8"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/textView10"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/finalPointsTeamB"
+            style="@style/Point_heading"
+            android:layout_marginStart="@dimen/margin_8"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/textView6"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/Point_heading"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="@string/colon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/minusPointTeamA" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/Point_heading"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="@string/colon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/finalGoalsReset"
+            style="@style/Reset_button"
+            android:layout_marginTop="@dimen/margin_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/goalsReset"
+            style="@style/Reset_button"
+            android:layout_marginTop="@dimen/margin_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <Button
+            android:id="@+id/minusPointTeamA"
+            style="@style/Minus_button"
+            android:layout_marginTop="@dimen/margin_8"
+            app:layout_constraintEnd_toEndOf="@+id/buttonGoalTeamA"
+            app:layout_constraintStart_toStartOf="@+id/buttonGoalTeamA"
+            app:layout_constraintTop_toBottomOf="@+id/buttonGoalTeamA" />
+
+        <Button
+            android:id="@+id/finalMinusPointTeamA"
+            style="@style/Minus_button"
+            android:layout_marginEnd="@dimen/margin_16"
+            app:layout_constraintBottom_toBottomOf="@+id/finalPointsTeamA"
+            app:layout_constraintEnd_toStartOf="@+id/finalPointsTeamA"
+            app:layout_constraintTop_toTopOf="@+id/finalPointsTeamA" />
+
+        <Button
+            android:id="@+id/finalMinusPointTeamB"
+            style="@style/Minus_button"
+            android:layout_marginStart="@dimen/margin_16"
+            app:layout_constraintBottom_toBottomOf="@+id/finalPointsTeamB"
+            app:layout_constraintStart_toEndOf="@+id/finalPlusPointTeamB"
+            app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/finalPlusPointTeamA"
+            style="@style/Plus_button"
+            android:layout_marginEnd="@dimen/margin_16"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintEnd_toStartOf="@+id/finalMinusPointTeamA"
+            app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/finalPlusPointTeamB"
+            style="@style/Plus_button"
+            android:layout_marginStart="@dimen/margin_16"
+            app:layout_constraintBottom_toBottomOf="@+id/textView6"
+            app:layout_constraintStart_toEndOf="@+id/finalPointsTeamB"
+            app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/minusPointTeamB"
+            style="@style/Minus_button"
+            android:layout_marginTop="@dimen/margin_8"
+            app:layout_constraintEnd_toEndOf="@+id/buttonGoalTeamB"
+            app:layout_constraintStart_toStartOf="@+id/buttonGoalTeamB"
+            app:layout_constraintTop_toBottomOf="@+id/buttonGoalTeamB" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/Main_heading"
+            android:layout_marginTop="@dimen/margin_32"
+            android:text="@string/current_set"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:background="@color/tabletennisColorDark"
+            app:layout_constraintTop_toBottomOf="@id/goalsReset"
+            tools:layout_editor_absoluteX="16dp">
+        </View>
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/Main_heading"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="@string/final_score"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</android.widget.RelativeLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/rugby_toolbar"
+        style="@style/Toolbar"
+        android:background="@color/rugbyColorDark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Rugby"
+        app:titleTextColor="@color/white" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rugby_toolbar"
+        android:background="@drawable/rugby_field"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/alpha_background">
+        </FrameLayout>
+
+        <include
+            android:id="@+id/id"
+            layout="@layout/sport_rugby_countdown_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button5pointsTeamA"
+            style="@style/Point_button"
+            android:background="@drawable/mybuttonrugby"
+            android:text="@string/rugby_try"
+            app:layout_constraintEnd_toStartOf="@+id/minus5pointsTeamA"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <Button
+            android:id="@+id/button2pointsTeamA"
+            style="@style/Point_button"
+            android:background="@drawable/mybuttonrugby"
+            android:text="@string/rugby_conversion"
+            app:layout_constraintEnd_toEndOf="@+id/button5pointsTeamA"
+            app:layout_constraintStart_toStartOf="@+id/button5pointsTeamA"
+            app:layout_constraintTop_toBottomOf="@+id/button5pointsTeamA" />
+
+        <Button
+            android:id="@+id/button3pointsTeamA"
+            style="@style/Point_button"
+            android:background="@drawable/mybuttonrugby"
+            android:text="@string/rugby_penalty"
+            app:layout_constraintEnd_toEndOf="@+id/button2pointsTeamA"
+            app:layout_constraintStart_toStartOf="@+id/button2pointsTeamA"
+            app:layout_constraintTop_toBottomOf="@+id/button2pointsTeamA" />
+
+        <Button
+            android:id="@+id/button3pointsTeamA2"
+            style="@style/Point_button"
+            android:background="@drawable/mybuttonrugby"
+            android:text="dropped&#10;goal"
+            app:layout_constraintEnd_toEndOf="@+id/button3pointsTeamA"
+            app:layout_constraintStart_toStartOf="@+id/button3pointsTeamA"
+            app:layout_constraintTop_toBottomOf="@+id/button3pointsTeamA" />
+
+        <Button
+            android:id="@+id/button5pointsTeamB"
+            style="@style/Point_button"
+            android:background="@drawable/mybuttonrugby"
+            android:text="@string/rugby_try"
+            app:layout_constraintEnd_toStartOf="@+id/minus5pointsTeamB"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <Button
+            android:id="@+id/button2pointsTeamB"
+            style="@style/Point_button"
+            android:background="@drawable/mybuttonrugby"
+            android:text="@string/rugby_conversion"
+            app:layout_constraintEnd_toEndOf="@+id/button5pointsTeamB"
+            app:layout_constraintStart_toStartOf="@+id/button5pointsTeamB"
+            app:layout_constraintTop_toBottomOf="@+id/button5pointsTeamB" />
+
+        <Button
+            android:id="@+id/button3pointsTeamB"
+            style="@style/Point_button"
+            android:background="@drawable/mybuttonrugby"
+            android:text="@string/rugby_penalty"
+            app:layout_constraintEnd_toEndOf="@+id/button2pointsTeamB"
+            app:layout_constraintStart_toStartOf="@+id/button2pointsTeamB"
+            app:layout_constraintTop_toBottomOf="@+id/button2pointsTeamB" />
+
+        <Button
+            android:id="@+id/button3pointsTeamB2"
+            style="@style/Point_button"
+            android:background="@drawable/mybuttonrugby"
+            android:text="dropped&#10;goal"
+            app:layout_constraintEnd_toEndOf="@+id/button3pointsTeamB"
+            app:layout_constraintStart_toStartOf="@+id/button3pointsTeamB"
+            app:layout_constraintTop_toBottomOf="@+id/button3pointsTeamB" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/Team_heading"
+            android:text="@string/team_b"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/Team_heading"
+            android:text="@string/team_a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <TextView
+            android:id="@+id/pointsTeamA"
+            style="@style/Point_heading"
+            android:layout_marginEnd="@dimen/margin_8"
+            app:layout_constraintEnd_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/textView10"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/pointsTeamB"
+            style="@style/Point_heading"
+            android:layout_marginStart="@dimen/margin_8"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/textView10"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/Point_heading"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="@string/colon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3pointsTeamA2" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id" />
+
+        <Button
+            android:id="@+id/pointsReset"
+            style="@style/Reset_button"
+            android:layout_marginBottom="@dimen/margin_32"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/minus3pointsTeamA"
+            style="@style/Minus_button"
+            android:layout_marginStart="@dimen/margin_8"
+            app:layout_constraintBottom_toBottomOf="@+id/button3pointsTeamA"
+            app:layout_constraintStart_toEndOf="@+id/button3pointsTeamA"
+            app:layout_constraintTop_toTopOf="@+id/button3pointsTeamA" />
+
+        <Button
+            android:id="@+id/minus3pointsTeamA2"
+            style="@style/Minus_button"
+            android:layout_marginStart="@dimen/margin_8"
+            app:layout_constraintBottom_toBottomOf="@+id/button3pointsTeamA2"
+            app:layout_constraintStart_toEndOf="@+id/button3pointsTeamA2"
+            app:layout_constraintTop_toTopOf="@+id/button3pointsTeamA2" />
+
+        <Button
+            android:id="@+id/minus2pointsTeamA"
+            style="@style/Minus_button"
+            android:layout_marginStart="@dimen/margin_8"
+            app:layout_constraintBottom_toBottomOf="@+id/button2pointsTeamA"
+            app:layout_constraintStart_toEndOf="@+id/button2pointsTeamA"
+            app:layout_constraintTop_toTopOf="@+id/button2pointsTeamA" />
+
+        <Button
+            android:id="@+id/minus5pointsTeamA"
+            style="@style/Minus_button"
+            android:layout_marginStart="@dimen/margin_8"
+            app:layout_constraintBottom_toBottomOf="@+id/button5pointsTeamA"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintStart_toEndOf="@+id/button5pointsTeamA"
+            app:layout_constraintTop_toTopOf="@+id/button5pointsTeamA" />
+
+        <Button
+            android:id="@+id/minus2pointsTeamB"
+            style="@style/Minus_button"
+            android:layout_marginStart="@dimen/margin_8"
+            app:layout_constraintBottom_toBottomOf="@+id/button2pointsTeamB"
+            app:layout_constraintStart_toEndOf="@+id/button2pointsTeamB"
+            app:layout_constraintTop_toTopOf="@+id/button2pointsTeamB" />
+
+        <Button
+            android:id="@+id/minus5pointsTeamB"
+            style="@style/Minus_button"
+            android:layout_marginStart="@dimen/margin_8"
+            app:layout_constraintBottom_toBottomOf="@+id/button5pointsTeamB"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintStart_toEndOf="@+id/button5pointsTeamB"
+            app:layout_constraintTop_toTopOf="@+id/button5pointsTeamB" />
+
+        <Button
+            android:id="@+id/minus3PointsTeamB"
+            style="@style/Minus_button"
+            android:layout_marginStart="@dimen/margin_8"
+            app:layout_constraintBottom_toBottomOf="@+id/button3pointsTeamB"
+            app:layout_constraintStart_toEndOf="@+id/button3pointsTeamB"
+            app:layout_constraintTop_toTopOf="@+id/button3pointsTeamB" />
+
+        <Button
+            android:id="@+id/minus3PointsTeamB2"
+            style="@style/Minus_button"
+            android:layout_marginStart="@dimen/margin_8"
+            app:layout_constraintBottom_toBottomOf="@+id/button3pointsTeamB2"
+            app:layout_constraintStart_toEndOf="@+id/button3pointsTeamB2"
+            app:layout_constraintTop_toTopOf="@+id/button3pointsTeamB2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</android.widget.RelativeLayout>

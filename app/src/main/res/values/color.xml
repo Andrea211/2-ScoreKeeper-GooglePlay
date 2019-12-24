@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SPORTS GRID ITEMS COLORS -->
+    <color name="footballColor">#4CAF50</color>
+    <color name="footballColorDark">#1B5E20</color>
+
+    <color name="basketballColor">#FF9800</color>
+    <color name="basketballColorDark">#E65100</color>
+    <color name="basketballBackground">#FFAD53</color>
+
+    <color name="cricketColor">#CDDC39</color>
+    <color name="cricketColorDark">#827717</color>
+
+    <color name="tennisColor">#FFC107</color>
+    <color name="tennisColorDark">#FF6F00</color>
+
+    <color name="rugbyColor">#8BC34A</color>
+    <color name="rugbyColorDark">#33691E</color>
+
+    <color name="hockeyColor">#4CAF50</color>
+    <color name="hockeyColorDark">#1B5E20</color>
+
+    <color name="volleyballColor">#795548</color>
+    <color name="volleyballColorDark">#3E2723</color>
+
+    <color name="badmintonColor">#2196F3</color>
+    <color name="badmintonColorDark">#0D47A1</color>
+
+    <color name="tabletennisColor">#607D8B</color>
+    <color name="tabletennisColorDark">#263238</color>
+
+    <color name="handballColor">#03A9F4</color>
+    <color name="handballColorDark">#01579B</color>
+
+    <!-- BUTTON COLORS -->
+    <color name="reset">#C62828</color>
+
+    <!-- TEXT COLORS -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="gray400">#BDBDBD</color>
+    <color name="gray500">#9E9E9E</color>
+    <color name="gray600">#757575</color>
+    <color name="gray700">#616161</color>
+    <color name="gray800">#424242</color>
+    <color name="gray900">#212121</color>
+
+    <color name="colorPrimary">#757575</color>
+    <color name="colorPrimaryDark">#616161</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <!-- TRANSPARENCY -->
+    <color name="grid_transparent">#33ffffff</color>
+</resources>

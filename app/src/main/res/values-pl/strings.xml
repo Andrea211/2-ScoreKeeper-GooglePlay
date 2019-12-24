@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="badminton">Badminton</string>
+    <string name="basketball">Koszykówka</string>
+    <string name="colon">:</string>
+    <string name="cricket">Krykiet</string>
+    <string name="current_set">Obecny set</string>
+    <string name="fault">faul</string>
+    <string name="final_score">końcowy wynik</string>
+    <string name="football">Piłka nożna</string>
+    <string name="gem">Gem</string>
+    <string name="goal">Gol</string>
+    <string name="grid_item_background">obrazek tła</string>
+    <string name="handball">Piłka ręczna</string>
+    <string name="hockey">Hokej</string>
+    <string name="match">Mecz</string>
+    <string name="minutes">Minuty</string>
+    <string name="number">Nr</string>
+    <string name="pause">Pauza</string>
+    <string name="player">Gracz</string>
+    <string name="point1">1 punkt</string>
+    <string name="point2">2 punkty</string>
+    <string name="point3">3 punkty</string>
+    <string name="red_card">Czerwona kartka</string>
+    <string name="reset">Reset</string>
+    <string name="rugby">Rugby</string>
+    <string name="rugby_try">Przyłożenie</string>
+    <string name="rugby_conversion">Podwyższenie</string>
+    <string name="rugby_penalty">Rzut karny</string>
+    <string name="run1">1 run</string>
+    <string name="run4">4 runy</string>
+    <string name="run6">6 run</string>
+    <string name="set">Ustaw</string>
+    <string name="sport">Sport</string>
+    <string name="start">Start</string>
+    <string name="tabletennis">Tenis stołowy</string>
+    <string name="team_a">Drużyna A</string>
+    <string name="team_b">Drużyna B</string>
+    <string name="tennis">Tenis</string>
+    <string name="time">00:00</string>
+    <string name="volleyball">Siatkówka</string>
+    <string name="yellow_card">Żółta kartka</string>
+    <string name="enter_positive_number">Wpisz wartość dodatnią</string>
+    <string name="field_cant_be_empty">Pole nie może być puste</string>
+    <string name="tennis_set">set</string>
+    <string name="app_name">ScoreKeeper</string>
+</resources>

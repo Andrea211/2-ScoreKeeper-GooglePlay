@@ -1,0 +1,136 @@
+<resources>
+
+
+
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Yellow checkbox for football game players. -->
+    <style name="CheckboxYellow" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlNormal">#ffd600</item>
+        <item name="android:colorControlActivated">#ffd600</item>
+        <item name="android:colorControlHighlight">#ffd600</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+    <!-- Red checkbox for football game players. -->
+    <style name="CheckboxRed" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlNormal">#C62828</item>
+        <item name="android:colorControlActivated">#C62828</item>
+        <item name="android:colorControlHighlight">#C62828</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+    <!-- Checkbox for basketball game players. -->
+    <style name="CheckboxBasketball" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlNormal">@color/basketballColorDark</item>
+        <item name="android:colorControlActivated">@color/basketballColorDark</item>
+        <item name="android:colorControlHighlight">@color/basketballColorDark</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+
+    <!-- Toolbar -->
+    <style name="Toolbar">
+        <item name="android:elevation">6dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!-- Point button -->
+    <style name="Point_button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Minus button -->
+    <style name="Minus_button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:text">"-"</item>
+        <item name="android:background">@drawable/mybutton</item>
+    </style>
+
+    <!-- Plus button -->
+    <style name="Plus_button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:text">"+"</item>
+        <item name="android:background">@drawable/mybutton</item>
+    </style>
+
+    <!-- Reset button -->
+    <style name="Reset_button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/reset</item>
+        <item name="android:background">@drawable/mybuttonreset</item>
+    </style>
+
+    <!-- Main heading -->
+    <style name="Main_heading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray900</item>
+        <item name="android:textSize">@dimen/h4</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Team heading -->
+    <style name="Team_heading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray800</item>
+        <item name="android:textSize">@dimen/h5</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Point heading -->
+    <style name="Point_heading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray900</item>
+        <item name="android:textSize">@dimen/h3</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Timer -->
+    <style name="EditText_Time">
+        <item name="android:layout_width">@dimen/width_120</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">4</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/h5</item>
+    </style>
+
+    <style name="button_timer">
+        <item name="android:layout_width">@dimen/width_120</item>
+        <item name="android:layout_height">@dimen/height_48</item>
+        <item name="android:textSize">@dimen/button</item>
+    </style>
+
+    <style name="TextView_timer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/height_96</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/gray900</item>
+        <item name="android:textSize">@dimen/h3</item>
+    </style>
+
+
+</resources>

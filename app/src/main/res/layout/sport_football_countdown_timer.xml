@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/footballColor"
+    tools:context="com.neonfunapps.scorekeeper.football.FootballActivity">
+
+    <EditText
+        android:id="@+id/edit_text_input"
+        style="@style/EditText_Time"
+        android:layout_above="@+id/text_view_countdown"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginStart="@dimen/margin_8"
+        android:hint="@string/minutes"
+        app:layout_constraintBottom_toTopOf="@+id/button_set"
+        app:layout_constraintEnd_toStartOf="@+id/text_view_countdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_view_countdown" />
+
+    <Button
+        android:id="@+id/button_set"
+        style="@style/button_timer"
+        android:layout_alignTop="@+id/edit_text_input"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_toEndOf="@+id/edit_text_input"
+        android:text="@string/set"
+        android:layout_marginStart="@dimen/margin_8"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_countdown"
+        app:layout_constraintEnd_toStartOf="@+id/text_view_countdown"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        style="@style/TextView_timer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/time" />
+
+    <Button
+        android:id="@+id/button_start_pause"
+        style="@style/button_timer"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:drawableStart="@drawable/ic_play_arrow_black_24dp"
+        android:text="@string/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_view_countdown"
+        app:layout_constraintTop_toTopOf="@+id/text_view_countdown" />
+
+    <Button
+        android:id="@+id/button_reset"
+        style="@style/button_timer"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_toEndOf="@+id/button_start_pause"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:drawableStart="@drawable/ic_replay_black_24dp"
+        android:text="@string/reset"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_countdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_view_countdown"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
